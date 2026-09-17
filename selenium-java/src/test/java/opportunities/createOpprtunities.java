@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import genric_utility.WebDriverUtility;
+
 /**
  * Test Case ID      : TC_OPP_001
  * Test Case Name    : Create Opportunity
@@ -109,37 +111,15 @@ public class createOpprtunities {
 		System.out.println("[PASS] Opportunity Name entered successfully.");
 
 		// Capture main window
-		System.out.println("[INFO] Capturing main window handle...");
-		String PID = driver.getWindowHandle();
-		System.out.println("[PASS] Main window handle captured successfully.");
 
-		// Open Organization selection pop-up
-		System.out.println("[INFO] Opening Organization selection pop-up...");
 		driver.findElement(By.cssSelector("img[src='themes/softed/images/select.gif']"))
 				.click();
-		System.out.println("[PASS] Organization selection pop-up opened successfully.");
-
-		// Capture window handles
-		System.out.println("[INFO] Capturing available window handles...");
-		Set<String> CIDs = driver.getWindowHandles();
-		System.out.println("[PASS] Window handles captured successfully.");
-
-		// Switch to pop-up
-		System.out.println("[INFO] Switching to Organization selection window...");
-		for (String i : CIDs) {
-			driver.switchTo().window(i);
-		}
-		System.out.println("[PASS] Switched to Organization selection window.");
-
-		// Select Organization
-		System.out.println("[INFO] Selecting Organization...");
+		
+		String PID = driver.getWindowHandle();
+		WebDriverUtility wdutil = new WebDriverUtility(driver);
+		wdutil.switchToWindowByTitle("sd");
 		driver.findElement(By.id("1")).click();
-		System.out.println("[PASS] Organization selected successfully.");
-
-		// Return to main window
-		System.out.println("[INFO] Switching back to main Opportunity window...");
 		driver.switchTo().window(PID);
-		System.out.println("[PASS] Returned to main Opportunity form.");
 
 
 		// Related To
@@ -207,12 +187,14 @@ public class createOpprtunities {
 				.click();
 		System.out.println("[PASS] Campaign selection pop-up opened successfully.");
 
+		WebDriverUtility webUtility = new WebDriverUtility(driver);
+		webUtility.switchToWindowByTitle("User Conference");
 		// Capture windows
 		System.out.println("[INFO] Capturing available window handles...");
 		Set<String> CID2 = driver.getWindowHandles();
 		System.out.println("[PASS] Window handles captured successfully.");
 
-		// Switch to Campaign window
+	/*	// Switch to Campaign window
 		System.out.println("[INFO] Switching to Campaign selection window...");
 		for (String j : CID2) {
 			driver.switchTo().window(j);
@@ -223,7 +205,7 @@ public class createOpprtunities {
 		System.out.println("[INFO] Selecting User Conference campaign...");
 		driver.findElement(By.linkText("User Conference")).click();
 		System.out.println("[PASS] User Conference campaign selected successfully.");
-
+*/
 
 		// Return to main window
 		System.out.println("[INFO] Switching back to main Opportunity window...");
@@ -288,11 +270,8 @@ public class createOpprtunities {
 				By.cssSelector("[src=\"themes/softed/images/user.PNG\"]"));
 		System.out.println("[PASS] User profile located successfully.");
 
-		// Hover over User Profile
-		System.out.println("[INFO] Hovering over user profile...");
-		Actions act = new Actions(driver);
-		act.moveToElement(profile).build().perform();
-		System.out.println("[PASS] User profile menu displayed successfully.");
+		WebDriverUtility wdUtil = new WebDriverUtility(driver);
+		wdUtil.hover(profile);
 
 		// Sign Out
 		System.out.println("[INFO] Clicking Sign Out...");

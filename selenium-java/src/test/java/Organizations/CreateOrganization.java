@@ -14,6 +14,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import genric_utility.FileUtility;
+import genric_utility.JavaUtility;
+import genric_utility.WebDriverUtility;
 
 public class CreateOrganization {
 
@@ -25,8 +27,12 @@ public class CreateOrganization {
 		String password = FileUtility.GetDataFJsonFile("pwd");
 
 		Random zc = new Random();
-		String accountName = FileUtility.GetDataExcellFile("ORGname", 4, 0)
-				+ zc.nextInt(100);
+//		String st = JavaUtility(driver);		
+//		
+//		JavaUtility js = new JavaUtility();
+//		int	js = generateRandomNumber(100);
+		String accountName = FileUtility.GetDataExcellFile("ORGname", 4, 0);
+//				+ num;
 		String email = FileUtility.GetDataExcellFile("ORGname", 5, 4);
 
 		WebDriver driver = null;
@@ -117,10 +123,12 @@ public class CreateOrganization {
 		WebElement profile = driver.findElement(
 				By.cssSelector("[src=\"themes/softed/images/user.PNG\"]"));
 
-	
+		WebDriverUtility wdUtil = new WebDriverUtility(driver);
+		wdUtil.hover(profile);
 
 		driver.findElement(By.linkText("Sign Out")).click();
 
 		driver.quit();
 	}
+
 }
