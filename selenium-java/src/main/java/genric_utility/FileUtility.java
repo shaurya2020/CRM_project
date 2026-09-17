@@ -38,6 +38,4 @@ public class FileUtility {
 			
 			return data;
 		}
-			
-		
-			}
+}
