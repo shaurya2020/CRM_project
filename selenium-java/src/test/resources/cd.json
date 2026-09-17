@@ -1,0 +1,6 @@
+{
+	"bro" : "chrome",
+	"un" : "admin",
+	"pwd" : "manager",
+	"url" : "http://localhost:8888/index.php"
+}
