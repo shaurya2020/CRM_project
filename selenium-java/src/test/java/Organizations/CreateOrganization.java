@@ -117,8 +117,7 @@ public class CreateOrganization {
 		WebElement profile = driver.findElement(
 				By.cssSelector("[src=\"themes/softed/images/user.PNG\"]"));
 
-		Actions act = new Actions(driver);
-		act.moveToElement(profile).build().perform();
+	
 
 		driver.findElement(By.linkText("Sign Out")).click();
 
