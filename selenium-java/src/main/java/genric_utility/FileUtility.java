@@ -1,4 +1,4 @@
-package genric_utility;
+  package genric_utility;
 
 import java.io.FileInputStream;
 import java.io.FileReader;
