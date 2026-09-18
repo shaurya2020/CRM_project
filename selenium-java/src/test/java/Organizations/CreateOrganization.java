@@ -25,14 +25,11 @@ public class CreateOrganization {
 		String url = FileUtility.GetDataFJsonFile("url");
 		String username = FileUtility.GetDataFJsonFile("un");
 		String password = FileUtility.GetDataFJsonFile("pwd");
-
-		Random zc = new Random();
-//		String st = JavaUtility(driver);		
-//		
-//		JavaUtility js = new JavaUtility();
-//		int	js = generateRandomNumber(100);
-		String accountName = FileUtility.GetDataExcellFile("ORGname", 4, 0);
-//				+ num;
+		
+		JavaUtility jd = new JavaUtility();
+		int zs = jd.generateRandomNumber(1000);
+		
+		String accountName = FileUtility.GetDataExcellFile("ORGname", 4, 0)+ zs;
 		String email = FileUtility.GetDataExcellFile("ORGname", 5, 4);
 
 		WebDriver driver = null;
@@ -130,5 +127,6 @@ public class CreateOrganization {
 
 		driver.quit();
 	}
+
 
 }
