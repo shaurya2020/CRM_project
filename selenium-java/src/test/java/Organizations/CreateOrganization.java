@@ -13,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import Object_repo.SauceDemoPage;
 import genric_utility.FileUtility;
 import genric_utility.JavaUtility;
 import genric_utility.WebDriverUtility;
@@ -25,6 +26,7 @@ public class CreateOrganization {
 		String url = FileUtility.GetDataFJsonFile("url");
 		String username = FileUtility.GetDataFJsonFile("un");
 		String password = FileUtility.GetDataFJsonFile("pwd");
+		
 		
 		JavaUtility jd = new JavaUtility();
 		int zs = jd.generateRandomNumber(1000);
@@ -67,11 +69,16 @@ public class CreateOrganization {
 		WebElement OrgNam = driver.findElement(By.name("accountname"));
 		OrgNam.sendKeys(accountName);
 
-		Random r = new Random();
-		String Num = "9140050" + r.nextInt(1000);
-
+//		Random r = new Random();
+//		String Num = "9140050" + r.nextInt(1000);
+		
+		JavaUtility jds = new JavaUtility();
+		int jz = jds.generateRandomNumber(1000);
+		String Num = "9140050" + jz;
 		WebElement phone = driver.findElement(By.id("phone"));
 		phone.sendKeys(Num);
+		
+		System.out.println(Num);
 
 		WebElement Email = driver.findElement(By.id("email1"));
 		Email.sendKeys(email);
@@ -127,6 +134,5 @@ public class CreateOrganization {
 
 		driver.quit();
 	}
-
 
 }
