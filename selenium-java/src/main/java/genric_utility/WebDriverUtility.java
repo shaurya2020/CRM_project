@@ -27,6 +27,7 @@ public class WebDriverUtility {
 		act.contextClick(element).build().perform();
 	}
 
+//BySelect
 	public void select(WebElement element, int index) {
 		Select sel = new Select(element);
 		sel.selectByIndex(index);
@@ -55,13 +56,9 @@ public class WebDriverUtility {
 
 	public void switchToWindowByUrl(String partialURL) {
 
-//	step 3> get all the session ids
 		Set<String> CIDs = driver.getWindowHandles();
-
-//	step 4> go through each and every window
 		for (String i : CIDs) {
 			driver.switchTo().window(i);
-//		step 5> break the loop wherever condition meets
 			if (driver.getCurrentUrl().contains(partialURL)) {
 				break;
 			}

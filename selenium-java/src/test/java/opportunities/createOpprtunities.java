@@ -13,26 +13,20 @@ import org.openqa.selenium.support.ui.Select;
 import genric_utility.WebDriverUtility;
 
 /**
- * Test Case ID      : TC_OPP_001
- * Test Case Name    : Create Opportunity
- * Module            : Opportunities
- * Test Type         : Functional / UI Automation Testing
+ * Test Case ID : TC_OPP_001 Test Case Name : Create Opportunity Module :
+ * Opportunities Test Type : Functional / UI Automation Testing
  *
- * Objective:
- * Verify that a user can successfully create a new Opportunity
- * by entering valid opportunity details and selecting the required
- * related records.
+ * Objective: Verify that a user can successfully create a new Opportunity by
+ * entering valid opportunity details and selecting the required related
+ * records.
  *
- * Preconditions:
- * 1. Vtiger application should be running.
- * 2. Valid login credentials should be available.
- * 3. Chrome browser should be installed.
+ * Preconditions: 1. Vtiger application should be running. 2. Valid login
+ * credentials should be available. 3. Chrome browser should be installed.
  *
- * Expected Result:
- * Opportunity should be created successfully with the entered details.
+ * Expected Result: Opportunity should be created successfully with the entered
+ * details.
  *
- * Postcondition:
- * User should be logged out and browser should be closed.
+ * Postcondition: User should be logged out and browser should be closed.
  */
 public class createOpprtunities {
 
@@ -65,7 +59,6 @@ public class createOpprtunities {
 		driver.get("http://localhost:8888/index.php");
 		System.out.println("[PASS] Vtiger application opened successfully.");
 
-
 		// Enter username
 		System.out.println("[INFO] Entering username...");
 		WebElement user = driver.findElement(By.name("user_name"));
@@ -93,8 +86,7 @@ public class createOpprtunities {
 
 		// Open Create Opportunity
 		System.out.println("[INFO] Opening Create Opportunity form...");
-		WebElement mod = driver.findElement(
-				By.cssSelector("img[alt='Create Opportunity...']"));
+		WebElement mod = driver.findElement(By.cssSelector("img[alt='Create Opportunity...']"));
 		mod.click();
 		System.out.println("[PASS] Create Opportunity form opened successfully.");
 
@@ -112,15 +104,13 @@ public class createOpprtunities {
 
 		// Capture main window
 
-		driver.findElement(By.cssSelector("img[src='themes/softed/images/select.gif']"))
-				.click();
-		
+		driver.findElement(By.cssSelector("img[src='themes/softed/images/select.gif']")).click();
+
 		String PID = driver.getWindowHandle();
 		WebDriverUtility wdutil = new WebDriverUtility(driver);
 		wdutil.switchToWindowByTitle("sd");
 		driver.findElement(By.id("1")).click();
 		driver.switchTo().window(PID);
-
 
 		// Related To
 		System.out.println("[INFO] Entering Related To information...");
@@ -174,7 +164,6 @@ public class createOpprtunities {
 		sl.selectByValue("Perception Analysis");
 		System.out.println("[PASS] Sales Stage selected: Perception Analysis.");
 
-
 		// Capture main window
 		System.out.println("[INFO] Capturing main Opportunity window handle...");
 		String PID2 = driver.getWindowHandle();
@@ -182,30 +171,27 @@ public class createOpprtunities {
 
 		// Open Campaign pop-up
 		System.out.println("[INFO] Opening Campaign selection pop-up...");
-		driver.findElement(
-				By.xpath("//input[@name='campaignname']/following-sibling::img[@alt='Select']"))
-				.click();
+		driver.findElement(By.xpath("//input[@name='campaignname']/following-sibling::img[@alt='Select']")).click();
 		System.out.println("[PASS] Campaign selection pop-up opened successfully.");
 
 		WebDriverUtility webUtility = new WebDriverUtility(driver);
 		webUtility.switchToWindowByTitle("User Conference");
 		// Capture windows
 		System.out.println("[INFO] Capturing available window handles...");
-		Set<String> CID2 = driver.getWindowHandles();
+//		Set<String> CID2 = driver.getWindowHandles();
 		System.out.println("[PASS] Window handles captured successfully.");
 
-	/*	// Switch to Campaign window
-		System.out.println("[INFO] Switching to Campaign selection window...");
-		for (String j : CID2) {
-			driver.switchTo().window(j);
-		}
-		System.out.println("[PASS] Switched to Campaign selection window.");
-
-		// Select User Conference
-		System.out.println("[INFO] Selecting User Conference campaign...");
-		driver.findElement(By.linkText("User Conference")).click();
-		System.out.println("[PASS] User Conference campaign selected successfully.");
-*/
+		/*
+		 * // Switch to Campaign window
+		 * System.out.println("[INFO] Switching to Campaign selection window..."); for
+		 * (String j : CID2) { driver.switchTo().window(j); }
+		 * System.out.println("[PASS] Switched to Campaign selection window.");
+		 * 
+		 * // Select User Conference
+		 * System.out.println("[INFO] Selecting User Conference campaign...");
+		 * driver.findElement(By.linkText("User Conference")).click();
+		 * System.out.println("[PASS] User Conference campaign selected successfully.");
+		 */
 
 		// Return to main window
 		System.out.println("[INFO] Switching back to main Opportunity window...");
@@ -224,11 +210,9 @@ public class createOpprtunities {
 		System.out.println("[PASS] Save button clicked successfully.");
 		System.out.println("[INFO] Opportunity creation request submitted.");
 
-
 		// Validate Opportunity Name
 		System.out.println("[INFO] Validating Opportunity Name...");
-		WebElement Vopptname = driver.findElement(
-				By.cssSelector("[id='dtlview_Opportunity Name']"));
+		WebElement Vopptname = driver.findElement(By.cssSelector("[id='dtlview_Opportunity Name']"));
 		System.out.println("[PASS] Opportunity Name validation element found.");
 
 		// Validate Related Organization
@@ -249,10 +233,7 @@ public class createOpprtunities {
 		// Verify Opportunity details
 		System.out.println("[INFO] Verifying created Opportunity details...");
 
-		if (Vopptname.equals(OppName)
-				&& related.equals(Vrelated)
-				&& Vamount.equals(amount)
-				&& Vtype.equals(ss)) {
+		if (Vopptname.equals(OppName) && related.equals(Vrelated) && Vamount.equals(amount) && Vtype.equals(ss)) {
 
 			System.out.println("[PASS] Opportunity details verified successfully.");
 			System.out.println("[PASS] Test Case TC_OPP_001 PASSED.");
@@ -263,11 +244,9 @@ public class createOpprtunities {
 			System.out.println("[FAIL] Test Case TC_OPP_001 FAILED.");
 		}
 
-
 		// Locate User Profile
 		System.out.println("[INFO] Locating user profile...");
-		WebElement profile = driver.findElement(
-				By.cssSelector("[src=\"themes/softed/images/user.PNG\"]"));
+		WebElement profile = driver.findElement(By.cssSelector("[src=\"themes/softed/images/user.PNG\"]"));
 		System.out.println("[PASS] User profile located successfully.");
 
 		WebDriverUtility wdUtil = new WebDriverUtility(driver);
@@ -280,7 +259,6 @@ public class createOpprtunities {
 
 		Thread.sleep(1000);
 
-	
 		// Close browser
 		System.out.println("[INFO] Closing browser...");
 		driver.quit();
