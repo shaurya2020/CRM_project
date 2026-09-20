@@ -70,7 +70,7 @@ public class CreateOrgTest {
 			orgField.sendKeys(orgName);
 			
 			
-			String Num = "9140050" ;
+//			String Num = "9140050" ;
 			
 			driver.findElement(By.className("save")).click();
 			
