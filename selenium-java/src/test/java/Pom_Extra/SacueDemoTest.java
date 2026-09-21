@@ -17,9 +17,9 @@ public class SacueDemoTest {
 		String username = "standard_user";
 		String password = "secret_sauce";
 
-		String firstName = "Piyush";
-		String lastName = "Baldaniya";
-		String postalCode = "302001";
+		String firstName = "Riya";
+		String lastName = "Singh";
+		String postalCode = "201301";
 
 		WebDriver driver = null;
 		
