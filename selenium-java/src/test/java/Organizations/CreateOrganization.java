@@ -21,7 +21,7 @@ public class CreateOrganization {
 
 	public static void main(String[] args) throws InterruptedException, IOException, ParseException {
 
-//		
+//		json
 		String browser = FileUtility.GetDataFJsonFile("bro");
 		String url = FileUtility.GetDataFJsonFile("url");
 		String username = FileUtility.GetDataFJsonFile("un");
