@@ -11,18 +11,15 @@ public class WebDriverUtility {
 	WebDriver driver;
 
 	public WebDriverUtility(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		this.driver = driver;
 	}
 
 	public void hover(WebElement element) {
-		// TODO Auto-generated method stub
 		Actions act = new Actions(driver);
 		act.moveToElement(element).build().perform();
 	}
 
 	public void rightclick(WebElement element) {
-		// TODO Auto-generated method stub
 		Actions act = new Actions(driver);
 		act.contextClick(element).build().perform();
 	}
