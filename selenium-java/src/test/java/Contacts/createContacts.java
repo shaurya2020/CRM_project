@@ -9,6 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import crm_reop.ContactPage;
+import crm_reop.LoginPage;
+import genric_utility.WebDriverUtility;
+
 public class createContacts {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -17,35 +21,38 @@ public class createContacts {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		
-		driver.get("http://localhost:8888/index.php");
+		String url = "http://localhost:8888/index.php";
+		driver.get(url);
 		
 //		log in
 		
-		WebElement user = driver.findElement(By.name("user_name"));
+		ContactPage ct = new ContactPage(driver);
+		LoginPage lg = new LoginPage(driver);
+//		WebElement user = driver.findElement(By.name("user_name"));
+		WebElement user = lg.getusername();
 		user.sendKeys("admin");
 		
-		WebElement pass = driver.findElement(By.name("user_password"));
+//		WebElement pass = driver.findElement(By.name("user_password"));
+		WebElement pass = lg.getPassword();		
 		pass.sendKeys("manager");
 		
-		WebElement login = driver.findElement(By.id("submitButton"));
+//		WebElement login = driver.findElement(By.id("submitButton"));
+		WebElement login = lg.getbutton();
 		login.click();
 		
 		
-		WebElement module = driver.findElement(By.linkText("Contacts"));
+//		WebElement module = driver.findElement(By.linkText("Contacts"));
+		WebElement module = ct.getLink();
 		module.click();
 		
-		WebElement addicon = driver.findElement(By.cssSelector("img[alt=\'Create Contact...\']"));
+//		WebElement addicon = driver.findElement(By.cssSelector("img[alt=\'Create Contact...\']"));
+		WebElement addicon = ct.getAddicon();
 		addicon.click();
 		
-//		main
 		
-		
-		WebElement firstname = driver.findElement(By.name("firstname"));
-		
+//		WebElement lastname = driver.findElement(By.name("lastname"));
 		String LastName = "Khayu";
-		WebElement lastname = driver.findElement(By.name("lastname"));
-		firstname.sendKeys("Ayuu");
+		WebElement lastname = ct.getLastname();
 		lastname.sendKeys(LastName);
 		
 //		PPopups
@@ -65,191 +72,38 @@ public class createContacts {
 		driver.switchTo().window(PID2);
 		
 		
-		WebElement ld = driver.findElement(By.name("leadsource"));
-		Select sel = new Select(ld);
-		sel.selectByValue("Employee");
-		
-		
-		
-		
-//		then
-		
-		WebElement phone = driver.findElement(By.id("phone"));
-		WebElement mobile = driver.findElement(By.id("mobile"));
-		WebElement homephone = driver.findElement(By.id("homephone"));
-		WebElement otherphone = driver.findElement(By.id("otherphone"));
+//		WebElement ld = driver.findElement(By.name("leadsource"));
+		WebElement ld = ct.getLead();
+		WebDriverUtility ns = new WebDriverUtility(driver);
+		ns.select(ld, "Employee");
+//		Selectsel nsel = new SelectSel
+//		Select sel = new Select(ld);
+//		sel.selectByValue("Employee");
+
+//		WebElement phone = driver.findElement(By.id("phone"));
+		WebElement phone = ct.getPhone();
 		phone.sendKeys("1234567892");
-		mobile.sendKeys("1234567893");
-		homephone.sendKeys("1234567894");
-		otherphone.sendKeys("1234567895");
-		
-		
-		WebElement title = driver.findElement(By.id("title"));
-		title.sendKeys("New Tile");
-		WebElement department = driver.findElement(By.id("department"));
-		department.sendKeys("Main");
-		
+
 		String Email ="ayush@gmail.com";
-		WebElement email = driver.findElement(By.id("email"));
+//		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = ct.getEmail();
 		email.sendKeys(Email);
 		
-		WebElement assistant = driver.findElement(By.id("assistant"));
+		
+//		WebElement assistant = driver.findElement(By.id("assistant"));
+		WebElement assistant = ct.getAssitance();
 		assistant.sendKeys("Chota bhai");
-		WebElement assistantphone = driver.findElement(By.id("assistantphone"));
-		assistantphone.sendKeys("9191919191");
-		
-		
 	
-		
-		WebElement mailingstreet= driver.findElement(By.name("mailingstreet"));
-		mailingstreet.sendKeys("ag");
-		WebElement otherstreet = driver.findElement(By.name("otherstreet"));
-		otherstreet.sendKeys("he");
-		WebElement mailingpobox = driver.findElement(By.name("mailingpobox"));
-		mailingpobox.sendKeys("hee");
-		WebElement otherpobox = driver.findElement(By.name("otherpobox"));
-		otherpobox.sendKeys("ag");
-		WebElement mailingcity = driver.findElement(By.name("mailingcity"));
-		mailingcity.sendKeys("ag");
-		WebElement othercity = driver.findElement(By.name("othercity"));
-		othercity.sendKeys("ag");
-		WebElement mailingstate = driver.findElement(By.name("mailingstate"));
-		mailingstate.sendKeys("ag");
-		WebElement otherstate = driver.findElement(By.name("otherstate"));
-		otherstate.sendKeys("new");
-		WebElement mailingzip = driver.findElement(By.name("mailingzip"));
-		mailingzip.sendKeys("ag");
-		WebElement otherzip = driver.findElement(By.name("otherzip"));
-		otherzip.sendKeys("ag");
-		WebElement mailingcountry = driver.findElement(By.name("mailingcountry"));
-		mailingcountry.sendKeys("hew");
-		WebElement othercountry = driver.findElement(By.name("othercountry"));
-		othercountry.sendKeys("ag");
-
-	
-		
-		WebElement description = driver.findElement(By.name("description"));
+//		WebElement description = driver.findElement(By.name("description"));
+		WebElement description = ct.getDescription();
 		description.sendKeys("its is done");
 		
-		
-//		save
-																
-		
-		
-		
-//		Verification
-		WebElement Vassistant = driver.findElement(By.id("assistant"));
-		if(Vassistant.equals(assistant))
-		{
-			System.out.println("Vassistant is okey");
-		}else {
-			System.out.println("Vassistant is not okey");
-		}
+		WebElement but = ct.getButton();
+		but.click();
 		
 
-		WebElement Vassistantphone = driver.findElement(By.id("dtlview_Assistant Phone"));
-		if(Vassistantphone.equals(assistantphone))
-		{
-			System.out.println("Vassistantphoneis okey");
-		}else {
-			System.out.println("Vassistantphone is not okey");
-		}
-		
-		WebElement Vmailingstreet= driver.findElement(By.name("mailingstreet"));
-		if (mailingstreet.equals(Vmailingstreet))
-		{
-			System.out.println("Vmailingstreet is okey");
-		}else {
-			System.out.println("Vmailingstreet is not okey");
-		}
-		
-		WebElement Votherstreet = driver.findElement(By.name("otherstreet"));
-		if(otherstreet.equals(Votherstreet))
-		{
-			System.out.println("Votherstreet is okey");
-		}else {
-			System.out.println("Votherstreet is not okey");
-		}
-		
-		WebElement Vmailingpobox = driver.findElement(By.name("mailingpobox"));
-		if(mailingpobox.equals(Vmailingpobox))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Votherpobox = driver.findElement(By.name("otherpobox"));
-		if(otherpobox.equals(Votherpobox))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Vmailingcity = driver.findElement(By.name("mailingcity"));
-		if (mailingcity.equals(Vmailingcity))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		
-		WebElement Vothercity = driver.findElement(By.name("othercity"));
-		if(othercity.equals(Vothercity))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Vmailingstate = driver.findElement(By.name("mailingstate"));
-		if(mailingstate.equals(Vmailingstate))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Votherstate = driver.findElement(By.name("otherstate"));
-		if(otherstate.equals(Votherstate))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Vmailingzip = driver.findElement(By.name("mailingzip"));
-		if(mailingzip.equals(Vmailingzip))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Votherzip = driver.findElement(By.name("otherzip"));
-		if(otherzip.equals(Votherzip))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		WebElement Vmailingcountry = driver.findElement(By.name("mailingcountry"));
-		if(mailingcountry.equals(Vmailingcountry))
-		{
-			System.out.println("Vmailingpobox is okey");
-		}else {
-			System.out.println("Vmailingpobox is not okey");
-		}
-		
-		WebElement Vothercountry = driver.findElement(By.name("othercountry"));
-		if(othercountry.equals(Vothercountry))
-		{
-			System.out.println("Vothercountry is okey");
-		}else {
-			System.out.println("Vothercountry is not okey");
-		}
-		
-		
-		
-		
 		Thread.sleep(12000);
-		
-		driver.quit();
+//		driver.quit();
 
 	}
 

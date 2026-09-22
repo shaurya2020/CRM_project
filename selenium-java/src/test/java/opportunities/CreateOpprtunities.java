@@ -26,7 +26,7 @@ import genric_utility.WebDriverUtility;
  *
  * Postcondition: User should be logged out and browser should be closed.
  */
-public class createOpprtunities {
+public class CreateOpprtunities {
 
 	public static void main(String[] args) throws InterruptedException {
 
