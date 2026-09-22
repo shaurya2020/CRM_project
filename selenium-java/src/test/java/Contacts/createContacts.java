@@ -122,6 +122,7 @@ public class createContacts {
 		but.click();
 		
 //		validation
+		
 //		String Vlastna = driver.findElement(By.id("dtlview_Last Name")).getText();
 		String Vlastna = vr.getlastname().getText();
 //		String VEmail = driver.findElement(By.id("dtlview_Email")).getText();

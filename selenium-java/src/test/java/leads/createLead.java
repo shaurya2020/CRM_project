@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import crm_reop.Leadspage;
 import crm_reop.LoginPage;
 import crm_reop.SignOut;
+import crm_reop.VeryLeadPage;
 import genric_utility.FileUtility;
 import genric_utility.WebDriverUtility;
 
@@ -106,13 +107,18 @@ public class createLead {
 		butt.click();
 		
 //		Validation
+		VeryLeadPage vlp = new VeryLeadPage(driver);
 		
-		String VLastName = driver.findElement(By.id("dtlview_Last Name")).getText();
-		String Vcompaney = driver.findElement(By.id("dtlview_Company")).getText();
-		String VleadS = driver.findElement(By.id("dtlview_Lead Source")).getText();
-		String VInd = driver.findElement(By.id("dtlview_Industry")).getText();
-		String VNum = driver.findElement(By.id("dtlview_Phone")).getText();
-		
+//		String VLastName = driver.findElement(By.id("dtlview_Last Name")).getText();
+		String VLastName = vlp.getLastname().getText();
+//		String Vcompaney = driver.findElement(By.id("dtlview_Company")).getText();
+		String Vcompaney = vlp.getCompany().getText();
+//		String VleadS = driver.findElement(By.id("dtlview_Lead Source")).getText();
+		String VleadS = vlp.getLeads().getText();
+//		String VInd = driver.findElement(By.id("dtlview_Industry")).getText();
+		String VInd = vlp.getInd().getText();
+//		String VNum = driver.findElement(By.id("dtlview_Phone")).getText();
+		String VNum = vlp.getNum().getText();
 
 		System.out.println("====================");
 		System.out.println("Expected Result : " + LastName);
