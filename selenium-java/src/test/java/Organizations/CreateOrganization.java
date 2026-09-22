@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import crm_reop.LoginPage;
 import crm_reop.OrgPage;
 import crm_reop.SignOut;
+import crm_reop.VeryOrgPage;
 import genric_utility.FileUtility;
 import genric_utility.JavaUtility;
 import genric_utility.WebDriverUtility;
@@ -50,37 +50,30 @@ public class CreateOrganization {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 		driver.get(url);
-
-
-//		driver.findElement(By.name("user_name")).sendKeys(username);
-
-//		driver.findElement(By.name("user_password")).sendKeys(password);
-
-//		driver.findElement(By.cssSelector("[id='submitButton']")).click();
-		
-		Thread.sleep(1000);
 		
 		LoginPage Lg = new LoginPage(driver);
 		OrgPage Og = new OrgPage(driver);
 		
+//		driver.findElement(By.name("user_name")).sendKeys(username);
 		WebElement userName = Lg.getusername();
 		userName.sendKeys(username);
 		
+//		driver.findElement(By.name("user_password")).sendKeys(password);
 		WebElement Password = Lg.getPassword();
 		Password.sendKeys(password);
 		
+//		driver.findElement(By.cssSelector("[id='submitButton']")).click();
 		WebElement button = Lg.getbutton();
 		button.click();
 
 
 		Thread.sleep(3000);
 		
-		WebElement link = Og.getLink();
-		link.click();
 		
 		
 //		WebElement module = driver.findElement(By.linkText("Organizations"));
-//		module.click();
+		WebElement module = Og.getLink();
+		module.click();
 
 //		WebElement mod = driver.findElement(By.cssSelector("[alt='Create Organization...']"));
 		WebElement mod = Og.getCss();
@@ -126,34 +119,25 @@ public class CreateOrganization {
 		but.click();
 		
 //Velidation
-		WebElement VOrgNam = driver.findElement(By.id("dtlview_Organization Name"));
-		VOrgNam.getText();
+		VeryOrgPage os = new VeryOrgPage(driver);
+//		String VOrgNam = driver.findElement(By.id("dtlview_Organization Name")).getText();
+		String VOrgNam = os.getOrgname().getText();
+//		String Vphone = driver.findElement(By.id("dtlview_Phone")).getText();;
+		String Vphone = os.getPhone().getText();
+//		String VEmail = driver.findElement(By.id("dtlview_Email")).getText();;
+		String VEmail = os.getEmail().getText();;
+//		String VInd = driver.findElement(By.id("dtlview_Industry")).getText();;
+		String VInd = os.getIndustery().getText();;
+//		String Vtype = driver.findElement(By.id("dtlview_Type")).getText();;
+		String Vtype = os.getType().getText();
 
-		WebElement Vphone = driver.findElement(By.id("dtlview_Phone"));
-		Vphone.getText();
-
-		WebElement VEmail = driver.findElement(By.id("dtlview_Email"));
-		VEmail.getText();
-		
-		WebElement VInd = driver.findElement(By.id("dtlview_Industry"));
-		VInd.getText();
-		
-		WebElement Vtype = driver.findElement(By.id("dtlview_Type"));
-		Vtype.getText();
-		
 		if (VOrgNam.equals(accountName)) {
 		    System.out.println("PASS: Organization Name is matched");
 		} else {
 		    System.out.println("FAIL: Organization Name is not matched");
 		}
 
-//		String VOrgNam = VOrgNam.getText();
-		String VPhone = Vphone.getText();
-//		String VEmail = VEmail.getText();
-		String VIndustry = VInd.getText();
-		String VType = Vtype.getText();
-
-		if (VPhone.equals(Num)) {
+		if (Vphone.equals(Num)) {
 		    System.out.println("PASS: Phone is matched");
 		} else {
 		    System.out.println("FAIL: Phone is not matched");
@@ -165,13 +149,13 @@ public class CreateOrganization {
 		    System.out.println("FAIL: Email is not matched");
 		}
 
-		if (VIndustry.equals(sell)) {
+		if (VInd.equals(sell)) {
 		    System.out.println("PASS: Industry is matched");
 		} else {
 		    System.out.println("FAIL: Industry is not matched");
 		}
 
-		if (VType.equals(cs)) {
+		if (Vtype.equals(cs)) {
 		    System.out.println("PASS: Type is matched");
 		} else {
 		    System.out.println("FAIL: Type is not matched");
