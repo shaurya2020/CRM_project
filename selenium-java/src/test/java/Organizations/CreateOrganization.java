@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import crm_reop.LoginPage;
 import crm_reop.OrgPage;
+import crm_reop.SignOut;
 import genric_utility.FileUtility;
 import genric_utility.JavaUtility;
 import genric_utility.WebDriverUtility;
@@ -176,12 +177,13 @@ public class CreateOrganization {
 		    System.out.println("FAIL: Type is not matched");
 		}
 //		WebElement profile = driver.findElement(By.cssSelector("[src=\'themes/softed/images/user.PNG\']"));
-		WebElement profile = Og.getPro();
+		SignOut sn = new SignOut(driver);
+		WebElement profile = sn.getPro();
 		WebDriverUtility wdUtil = new WebDriverUtility(driver);
 		wdUtil.hover(profile);
 
 //		driver.findElement(By.linkText("Sign Out")).click();
-		WebElement Out = Og.getSingnOut();
+		WebElement Out = sn.getSingnOut();
 		Out.click();
 
 		driver.quit();
