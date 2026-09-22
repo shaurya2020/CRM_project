@@ -1,21 +1,26 @@
 package vtigers;
 
+import java.io.IOException;
 import java.time.Duration;
+
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import genric_utility.FileUtility;
+
 public class Opportunities {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException, ParseException {
 		// TODO Auto-generated method stubs
 		ChromeDriver driver = new ChromeDriver(); 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
-		
-		driver.get("http://localhost:8888/index.php");
+		String url = FileUtility.GetDataFJsonFile("url");
+		driver.get(url);
 		
 //		log in
 		
@@ -81,12 +86,10 @@ public class Opportunities {
 		
 		
 		WebElement Assigned = driver.findElement(By.name("assigned_user_id"));
-		
 		Select As = new Select(Assigned);
 		As.selectByValue("1");
 		
 		WebElement Sales = driver.findElement(By.name("sales_stage"));
-		
 		Select sl = new Select(Sales);
 		sl.selectByValue("Perception Analysis");
 		
