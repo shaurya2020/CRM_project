@@ -47,7 +47,7 @@ public class CreateOrganization {
 
 		driver.manage().window().maximize();
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get(url);
 		
@@ -66,10 +66,7 @@ public class CreateOrganization {
 		WebElement button = Lg.getbutton();
 		button.click();
 
-
-		Thread.sleep(3000);
-		
-		
+//		main
 		
 //		WebElement module = driver.findElement(By.linkText("Organizations"));
 		WebElement module = Og.getLink();
@@ -118,7 +115,8 @@ public class CreateOrganization {
 		WebElement but = Og.getButton();
 		but.click();
 		
-//Velidation
+//		Velidation
+		
 		VeryOrgPage os = new VeryOrgPage(driver);
 //		String VOrgNam = driver.findElement(By.id("dtlview_Organization Name")).getText();
 		String VOrgNam = os.getOrgname().getText();
@@ -160,6 +158,9 @@ public class CreateOrganization {
 		} else {
 		    System.out.println("FAIL: Type is not matched");
 		}
+		
+//		signOut
+		
 //		WebElement profile = driver.findElement(By.cssSelector("[src=\'themes/softed/images/user.PNG\']"));
 		SignOut sn = new SignOut(driver);
 		WebElement profile = sn.getPro();

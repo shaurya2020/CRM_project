@@ -4,12 +4,9 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 import crm_reop.Leadspage;
 import crm_reop.LoginPage;
@@ -172,9 +169,9 @@ public class createLead {
 		
 		SignOut sn = new SignOut(driver);
 //		WebElement profile = driver.findElement(	By.cssSelector("[src=\"themes/softed/images/user.PNG\"]"));
+		WebElement profile = sn.getPro();
 //		Actions act = new Actions(driver);
 //		act.moveToElement(profile).build().perform();
-		WebElement profile = sn.getPro();
 		WebDriverUtility wdUtil = new WebDriverUtility(driver);
 		wdUtil.hover(profile);
 

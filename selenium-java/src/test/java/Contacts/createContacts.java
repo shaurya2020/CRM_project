@@ -44,7 +44,6 @@ public class createContacts {
 		
 //		log in
 		
-		ContactPage ct = new ContactPage(driver);
 		LoginPage lg = new LoginPage(driver);
 		VeyContactPage vr = new VeyContactPage(driver);
 //		WebElement user = driver.findElement(By.name("user_name"));
@@ -60,6 +59,7 @@ public class createContacts {
 		login.click();
 		
 //		home
+		ContactPage ct = new ContactPage(driver);
 //		WebElement module = driver.findElement(By.linkText("Contacts"));
 		WebElement module = ct.getLink();
 		module.click();

@@ -36,10 +36,7 @@ public class createEmail {
 
 		WebDriver driver = new ChromeDriver();
 
-		// Maximize browser window
 		driver.manage().window().maximize();
-
-		// Set implicit wait for locating web elements
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		System.out.println("[PASS] Chrome browser launched successfully.");
@@ -47,15 +44,10 @@ public class createEmail {
 		// ------------------------------------------------------------
 		// Step 2: Open Vtiger CRM application
 		// ------------------------------------------------------------
-		System.out.println("[STEP 2] Opening Vtiger CRM application...");
 
 		driver.get("http://localhost:8888/index.php");
 
-		System.out.println("[PASS] Vtiger CRM application opened.");
 
-		// ------------------------------------------------------------
-		// Step 3: Login into Vtiger CRM
-		// ------------------------------------------------------------
 		System.out.println("[STEP 3] Logging into Vtiger CRM...");
 
 		// Locate username field and enter username
