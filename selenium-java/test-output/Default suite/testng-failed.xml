@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="opportunities.CreateOpprtunities">
+      <class name="Testing.SourceDemoDPTest">
         <methods>
-          <include name="createopp"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- opportunities.CreateOpprtunities -->
+      </class> <!-- Testing.SourceDemoDPTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
