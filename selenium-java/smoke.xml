@@ -1,0 +1,15 @@
+<suite name="Smoke">
+	<groups>
+		<run>
+			<include name="smoke" />
+		</run>
+	</groups>
+	<test name="test_02">
+		<classes>
+			<class name="type_of_exe.ContactTest" />
+			<class name="type_of_exe.LeadTest" />
+			<class name="type_of_exe.OrgTest" />
+			<class name="type_of_exe.OpptTest" />
+		</classes>
+	</test>
+</suite>

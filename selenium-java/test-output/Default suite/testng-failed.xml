@@ -5,7 +5,7 @@
     <classes>
       <class name="Testing.SourceDemoDPTest">
         <methods>
-          <include name="login"/>
+          <include name="login" invocation-numbers="1"/>
         </methods>
       </class> <!-- Testing.SourceDemoDPTest -->
     </classes>
