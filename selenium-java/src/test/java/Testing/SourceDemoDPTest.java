@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class SourceDemoDPTest {
 
-	@Test(dataProvider ="GetData")
+	@Test(dataProvider ="getData")
 	public void login(String user,String Pass) throws InterruptedException {
 		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
