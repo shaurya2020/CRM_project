@@ -1,67 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="12" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[this is pass]]>
+    </line>
+    <line>
+      <![CDATA[hi there ...., true]]>
+    </line>
+    <line>
+      <![CDATA[this is pass]]>
+    </line>
+    <line>
+      <![CDATA[this is pass]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-09-30T18:17:04 IST" name="Smoke" finished-at="2026-09-30T18:17:04 IST" duration-ms="101">
+  <suite started-at="2026-09-30T18:22:31 IST" name="Default suite" finished-at="2026-09-30T18:22:31 IST" duration-ms="77">
     <groups>
-      <group name="reg">
-        <method signature="ContactTest.loadContact()[pri:0, instance:type_of_exe.ContactTest@765d7657]" name="loadContact" class="type_of_exe.ContactTest"/>
-        <method signature="LeadTest.createLead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" name="createLead" class="type_of_exe.LeadTest"/>
-        <method signature="OpptTest.loadOpp()[pri:0, instance:type_of_exe.OpptTest@2b71e916]" name="loadOpp" class="type_of_exe.OpptTest"/>
-        <method signature="OrgTest.createOrg()[pri:0, instance:type_of_exe.OrgTest@411f53a0]" name="createOrg" class="type_of_exe.OrgTest"/>
-      </group> <!-- reg -->
-      <group name="smoke">
-        <method signature="ContactTest.loadContact()[pri:0, instance:type_of_exe.ContactTest@765d7657]" name="loadContact" class="type_of_exe.ContactTest"/>
-        <method signature="LeadTest.createLead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" name="createLead" class="type_of_exe.LeadTest"/>
-        <method signature="LeadTest.loadlead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" name="loadlead" class="type_of_exe.LeadTest"/>
-        <method signature="LeadTest.verifyLead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" name="verifyLead" class="type_of_exe.LeadTest"/>
-        <method signature="OpptTest.VerifyOpp()[pri:0, instance:type_of_exe.OpptTest@2b71e916]" name="VerifyOpp" class="type_of_exe.OpptTest"/>
-        <method signature="OpptTest.loadOpp()[pri:0, instance:type_of_exe.OpptTest@2b71e916]" name="loadOpp" class="type_of_exe.OpptTest"/>
-        <method signature="OrgTest.LoadOrg()[pri:0, instance:type_of_exe.OrgTest@411f53a0]" name="LoadOrg" class="type_of_exe.OrgTest"/>
-        <method signature="OrgTest.createOrg()[pri:0, instance:type_of_exe.OrgTest@411f53a0]" name="createOrg" class="type_of_exe.OrgTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-09-30T18:17:04 IST" name="test_02" finished-at="2026-09-30T18:17:04 IST" duration-ms="101">
-      <class name="type_of_exe.OpptTest">
-        <test-method signature="VerifyOpp()[pri:0, instance:type_of_exe.OpptTest@2b71e916]" started-at="2026-09-30T18:17:04 IST" name="VerifyOpp" finished-at="2026-09-30T18:17:04 IST" duration-ms="2" status="PASS">
+    <test started-at="2026-09-30T18:22:31 IST" name="Default test" finished-at="2026-09-30T18:22:31 IST" duration-ms="77">
+      <class name="Testing.NgTest">
+        <test-method signature="cratecontact()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="cratecontact" finished-at="2026-09-30T18:22:31 IST" duration-ms="14" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[this is pass]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- VerifyOpp -->
-        <test-method signature="loadOpp()[pri:0, instance:type_of_exe.OpptTest@2b71e916]" started-at="2026-09-30T18:17:04 IST" name="loadOpp" finished-at="2026-09-30T18:17:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- cratecontact -->
+        <test-method signature="createOrg()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="createOrg" finished-at="2026-09-30T18:22:31 IST" duration-ms="2" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadOpp -->
-      </class> <!-- type_of_exe.OpptTest -->
-      <class name="type_of_exe.OrgTest">
-        <test-method signature="LoadOrg()[pri:0, instance:type_of_exe.OrgTest@411f53a0]" started-at="2026-09-30T18:17:04 IST" name="LoadOrg" finished-at="2026-09-30T18:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoadOrg -->
-        <test-method signature="createOrg()[pri:0, instance:type_of_exe.OrgTest@411f53a0]" started-at="2026-09-30T18:17:04 IST" name="createOrg" finished-at="2026-09-30T18:17:04 IST" duration-ms="2" status="PASS">
-          <reporter-output>
+            <line>
+              <![CDATA[hi there ...., true]]>
+            </line>
           </reporter-output>
         </test-method> <!-- createOrg -->
-      </class> <!-- type_of_exe.OrgTest -->
-      <class name="type_of_exe.LeadTest">
-        <test-method signature="createLead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" started-at="2026-09-30T18:17:04 IST" name="createLead" finished-at="2026-09-30T18:17:04 IST" duration-ms="2" status="PASS">
+        <test-method signature="createlead()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="createlead" finished-at="2026-09-30T18:22:31 IST" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[this is pass]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method signature="loadlead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" started-at="2026-09-30T18:17:04 IST" name="loadlead" finished-at="2026-09-30T18:17:04 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- createlead -->
+        <test-method signature="createopp()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="createopp" finished-at="2026-09-30T18:22:31 IST" duration-ms="1" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[this is pass]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- loadlead -->
-        <test-method signature="verifyLead()[pri:0, instance:type_of_exe.LeadTest@6b2ea799]" started-at="2026-09-30T18:17:04 IST" name="verifyLead" finished-at="2026-09-30T18:17:04 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLead -->
-      </class> <!-- type_of_exe.LeadTest -->
-      <class name="type_of_exe.ContactTest">
-        <test-method signature="loadContact()[pri:0, instance:type_of_exe.ContactTest@765d7657]" started-at="2026-09-30T18:17:04 IST" name="loadContact" finished-at="2026-09-30T18:17:04 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadContact -->
-      </class> <!-- type_of_exe.ContactTest -->
-    </test> <!-- test_02 -->
-  </suite> <!-- Smoke -->
+        </test-method> <!-- createopp -->
+      </class> <!-- Testing.NgTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
