@@ -11,9 +11,8 @@ public class LeadTest {
 	
 	@Parameters("browser")
 	@Test
-	public void createLead(String browser) {
+	public void createLead(String browser) throws InterruptedException {
 		
-
 			WebDriver driver;
 
 			if (browser.equals("chrome")) {
@@ -25,9 +24,8 @@ public class LeadTest {
 			}else
 				driver = new ChromeDriver();
 			
-			
 			System.out.println("Create lead");
-			
+			Thread.sleep(1000);
 			driver.quit();
 	}
 	}

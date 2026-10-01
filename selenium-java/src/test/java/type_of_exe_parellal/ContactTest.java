@@ -24,6 +24,7 @@ public class ContactTest {
 		}else
 			driver = new ChromeDriver();
 		
+		System.out.println("Create contact");
 			driver.quit();
 		}
 
