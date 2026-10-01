@@ -7,6 +7,7 @@
 
 	</test>
 	<test parallel="tests" name="Test2">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="type_of_exe_parellal.LeadTest" />
 		</classes>

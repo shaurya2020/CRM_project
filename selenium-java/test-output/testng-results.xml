@@ -1,59 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-01T21:14:09 IST" name="Suite" finished-at="2026-10-01T21:14:13 IST" duration-ms="3646">
+  <suite started-at="2026-10-01T21:31:31 IST" name="Suite" finished-at="2026-10-01T21:31:36 IST" duration-ms="4511">
     <groups>
       <group name="reg">
-        <method signature="OrgTest.createOrg(java.lang.String)[pri:0, instance:type_of_exe_parellal.OrgTest@5dda768f]" name="createOrg" class="type_of_exe_parellal.OrgTest"/>
-        <method signature="OpptTest.createOpp(java.lang.String)[pri:0, instance:type_of_exe_parellal.OpptTest@2a5c8d3f]" name="createOpp" class="type_of_exe_parellal.OpptTest"/>
+        <method signature="OrgTest.createOrg(java.lang.String)[pri:0, instance:type_of_exe_parellal.OrgTest@7a8c8dcf]" name="createOrg" class="type_of_exe_parellal.OrgTest"/>
+        <method signature="OpptTest.createOpp(java.lang.String)[pri:0, instance:type_of_exe_parellal.OpptTest@752325ad]" name="createOpp" class="type_of_exe_parellal.OpptTest"/>
       </group> <!-- reg -->
     </groups>
-    <test started-at="2026-10-01T21:14:09 IST" name="Test2" finished-at="2026-10-01T21:14:09 IST" duration-ms="67">
-      <class name="type_of_exe_parellal.LeadTest">
-        <test-method signature="createLead(java.lang.String)[pri:0, instance:type_of_exe_parellal.LeadTest@1c1bbc4e]" started-at="2026-10-01T21:14:09 IST" name="createLead" finished-at="2026-10-01T21:14:09 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by @Test on method createLead but has not been marked @Optional or defined
-in C:\Users\ayush\git\CRM_project\selenium-java\parallel.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by @Test on method createLead but has not been marked @Optional or defined
-in C:\Users\ayush\git\CRM_project\selenium-java\parallel.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-      </class> <!-- type_of_exe_parellal.LeadTest -->
-    </test> <!-- Test2 -->
-    <test started-at="2026-10-01T21:14:09 IST" name="Test4" finished-at="2026-10-01T21:14:13 IST" duration-ms="3527">
+    <test started-at="2026-10-01T21:31:31 IST" name="Test4" finished-at="2026-10-01T21:31:36 IST" duration-ms="4185">
       <class name="type_of_exe_parellal.OpptTest">
-        <test-method signature="createOpp(java.lang.String)[pri:0, instance:type_of_exe_parellal.OpptTest@2a5c8d3f]" started-at="2026-10-01T21:14:09 IST" name="createOpp" finished-at="2026-10-01T21:14:13 IST" duration-ms="3462" status="PASS">
+        <test-method signature="createOpp(java.lang.String)[pri:0, instance:type_of_exe_parellal.OpptTest@752325ad]" started-at="2026-10-01T21:31:31 IST" name="createOpp" finished-at="2026-10-01T21:31:36 IST" duration-ms="4133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,9 +24,9 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
         </test-method> <!-- createOpp -->
       </class> <!-- type_of_exe_parellal.OpptTest -->
     </test> <!-- Test4 -->
-    <test started-at="2026-10-01T21:14:09 IST" name="Test1" finished-at="2026-10-01T21:14:13 IST" duration-ms="3631">
+    <test started-at="2026-10-01T21:31:31 IST" name="Test1" finished-at="2026-10-01T21:31:36 IST" duration-ms="4200">
       <class name="type_of_exe_parellal.ContactTest">
-        <test-method signature="createContact(java.lang.String)[pri:0, instance:type_of_exe_parellal.ContactTest@65fb9ffc]" started-at="2026-10-01T21:14:09 IST" name="createContact" finished-at="2026-10-01T21:14:13 IST" duration-ms="3569" status="PASS">
+        <test-method signature="createContact(java.lang.String)[pri:0, instance:type_of_exe_parellal.ContactTest@65fb9ffc]" started-at="2026-10-01T21:31:31 IST" name="createContact" finished-at="2026-10-01T21:31:36 IST" duration-ms="4153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,9 +39,9 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
         </test-method> <!-- createContact -->
       </class> <!-- type_of_exe_parellal.ContactTest -->
     </test> <!-- Test1 -->
-    <test started-at="2026-10-01T21:14:09 IST" name="Test3" finished-at="2026-10-01T21:14:13 IST" duration-ms="3646">
+    <test started-at="2026-10-01T21:31:31 IST" name="Test3" finished-at="2026-10-01T21:31:36 IST" duration-ms="4407">
       <class name="type_of_exe_parellal.OrgTest">
-        <test-method signature="createOrg(java.lang.String)[pri:0, instance:type_of_exe_parellal.OrgTest@5dda768f]" started-at="2026-10-01T21:14:09 IST" name="createOrg" finished-at="2026-10-01T21:14:13 IST" duration-ms="3585" status="PASS">
+        <test-method signature="createOrg(java.lang.String)[pri:0, instance:type_of_exe_parellal.OrgTest@7a8c8dcf]" started-at="2026-10-01T21:31:31 IST" name="createOrg" finished-at="2026-10-01T21:31:36 IST" duration-ms="4361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,5 +54,20 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
         </test-method> <!-- createOrg -->
       </class> <!-- type_of_exe_parellal.OrgTest -->
     </test> <!-- Test3 -->
+    <test started-at="2026-10-01T21:31:31 IST" name="Test2" finished-at="2026-10-01T21:31:36 IST" duration-ms="4511">
+      <class name="type_of_exe_parellal.LeadTest">
+        <test-method signature="createLead(java.lang.String)[pri:0, instance:type_of_exe_parellal.LeadTest@55fe41ea]" started-at="2026-10-01T21:31:31 IST" name="createLead" finished-at="2026-10-01T21:31:36 IST" duration-ms="4465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+      </class> <!-- type_of_exe_parellal.LeadTest -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
