@@ -1,4 +1,4 @@
-package type_of_exe;
+package type_of_exe_batch;
 
 import org.testng.annotations.Test;
 

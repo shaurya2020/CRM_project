@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testing.SourceDemoDPTest">
+      <class name="type_of_exe_paralell.ContactTest">
         <methods>
-          <include name="login" invocation-numbers="1"/>
+          <include name="createContact"/>
         </methods>
-      </class> <!-- Testing.SourceDemoDPTest -->
+      </class> <!-- type_of_exe_paralell.ContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
