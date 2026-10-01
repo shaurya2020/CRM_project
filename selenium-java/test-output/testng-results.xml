@@ -14,33 +14,33 @@
       <![CDATA[this is pass]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-09-30T18:22:31 IST" name="Default suite" finished-at="2026-09-30T18:22:31 IST" duration-ms="77">
+  <suite started-at="2026-09-30T22:09:11 IST" name="Default suite" finished-at="2026-09-30T22:09:11 IST" duration-ms="96">
     <groups>
     </groups>
-    <test started-at="2026-09-30T18:22:31 IST" name="Default test" finished-at="2026-09-30T18:22:31 IST" duration-ms="77">
+    <test started-at="2026-09-30T22:09:11 IST" name="Default test" finished-at="2026-09-30T22:09:11 IST" duration-ms="96">
       <class name="Testing.NgTest">
-        <test-method signature="cratecontact()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="cratecontact" finished-at="2026-09-30T18:22:31 IST" duration-ms="14" status="PASS">
+        <test-method signature="cratecontact()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T22:09:11 IST" name="cratecontact" finished-at="2026-09-30T22:09:11 IST" duration-ms="16" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[this is pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- cratecontact -->
-        <test-method signature="createOrg()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="createOrg" finished-at="2026-09-30T18:22:31 IST" duration-ms="2" status="PASS">
+        <test-method signature="createOrg()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T22:09:11 IST" name="createOrg" finished-at="2026-09-30T22:09:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[hi there ...., true]]>
             </line>
           </reporter-output>
         </test-method> <!-- createOrg -->
-        <test-method signature="createlead()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="createlead" finished-at="2026-09-30T18:22:31 IST" duration-ms="2" status="PASS">
+        <test-method signature="createlead()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T22:09:11 IST" name="createlead" finished-at="2026-09-30T22:09:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[this is pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- createlead -->
-        <test-method signature="createopp()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T18:22:31 IST" name="createopp" finished-at="2026-09-30T18:22:31 IST" duration-ms="1" status="PASS">
+        <test-method signature="createopp()[pri:0, instance:Testing.NgTest@5e0e82ae]" started-at="2026-09-30T22:09:11 IST" name="createopp" finished-at="2026-09-30T22:09:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[this is pass]]>
