@@ -1,73 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-01T21:31:31 IST" name="Suite" finished-at="2026-10-01T21:31:36 IST" duration-ms="4511">
+  <suite started-at="2026-10-01T22:00:15 IST" name="Suite" finished-at="2026-10-01T22:00:19 IST" duration-ms="3874">
     <groups>
-      <group name="reg">
-        <method signature="OrgTest.createOrg(java.lang.String)[pri:0, instance:type_of_exe_parellal.OrgTest@7a8c8dcf]" name="createOrg" class="type_of_exe_parellal.OrgTest"/>
-        <method signature="OpptTest.createOpp(java.lang.String)[pri:0, instance:type_of_exe_parellal.OpptTest@752325ad]" name="createOpp" class="type_of_exe_parellal.OpptTest"/>
-      </group> <!-- reg -->
     </groups>
-    <test started-at="2026-10-01T21:31:31 IST" name="Test4" finished-at="2026-10-01T21:31:36 IST" duration-ms="4185">
-      <class name="type_of_exe_parellal.OpptTest">
-        <test-method signature="createOpp(java.lang.String)[pri:0, instance:type_of_exe_parellal.OpptTest@752325ad]" started-at="2026-10-01T21:31:31 IST" name="createOpp" finished-at="2026-10-01T21:31:36 IST" duration-ms="4133" status="PASS">
+    <test started-at="2026-10-01T22:00:15 IST" name="Test" finished-at="2026-10-01T22:00:19 IST" duration-ms="3874">
+      <class name="Testing.SourceDemoEx">
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testing.SourceDemoEx@3e694b3f]" started-at="2026-10-01T22:00:15 IST" name="login" finished-at="2026-10-01T22:00:19 IST" duration-ms="3836" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOpp -->
-      </class> <!-- type_of_exe_parellal.OpptTest -->
-    </test> <!-- Test4 -->
-    <test started-at="2026-10-01T21:31:31 IST" name="Test1" finished-at="2026-10-01T21:31:36 IST" duration-ms="4200">
-      <class name="type_of_exe_parellal.ContactTest">
-        <test-method signature="createContact(java.lang.String)[pri:0, instance:type_of_exe_parellal.ContactTest@65fb9ffc]" started-at="2026-10-01T21:31:31 IST" name="createContact" finished-at="2026-10-01T21:31:36 IST" duration-ms="4153" status="PASS">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContact -->
-      </class> <!-- type_of_exe_parellal.ContactTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2026-10-01T21:31:31 IST" name="Test3" finished-at="2026-10-01T21:31:36 IST" duration-ms="4407">
-      <class name="type_of_exe_parellal.OrgTest">
-        <test-method signature="createOrg(java.lang.String)[pri:0, instance:type_of_exe_parellal.OrgTest@7a8c8dcf]" started-at="2026-10-01T21:31:31 IST" name="createOrg" finished-at="2026-10-01T21:31:36 IST" duration-ms="4361" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrg -->
-      </class> <!-- type_of_exe_parellal.OrgTest -->
-    </test> <!-- Test3 -->
-    <test started-at="2026-10-01T21:31:31 IST" name="Test2" finished-at="2026-10-01T21:31:36 IST" duration-ms="4511">
-      <class name="type_of_exe_parellal.LeadTest">
-        <test-method signature="createLead(java.lang.String)[pri:0, instance:type_of_exe_parellal.LeadTest@55fe41ea]" started-at="2026-10-01T21:31:31 IST" name="createLead" finished-at="2026-10-01T21:31:36 IST" duration-ms="4465" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-      </class> <!-- type_of_exe_parellal.LeadTest -->
-    </test> <!-- Test2 -->
+        </test-method> <!-- login -->
+      </class> <!-- Testing.SourceDemoEx -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

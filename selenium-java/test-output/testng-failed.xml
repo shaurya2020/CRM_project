@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]">
-  <test thread-count="5" parallel="tests" name="Test2(failed)">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="pass" value="admin123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="user" value="admin"/>
     <classes>
-      <class name="type_of_exe_parellal.LeadTest">
+      <class name="Testing.SourceDemoEx">
         <methods>
-          <include name="createLead"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- type_of_exe_parellal.LeadTest -->
+      </class> <!-- Testing.SourceDemoEx -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

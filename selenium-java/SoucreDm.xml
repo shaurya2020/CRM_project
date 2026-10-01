@@ -1,0 +1,13 @@
+<suite parallel="tests" name="Suite">
+	<test thread-count="5" parallel="tests" name="Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="user" value="standard_user" />
+		<parameter name="pass" value="secret_sauce" />
+		<classes>
+			<class name="Testing.SourceDemoEx" />
+		</classes>
+
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

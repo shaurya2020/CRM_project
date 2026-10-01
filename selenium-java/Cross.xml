@@ -1,0 +1,35 @@
+
+<suite parallel="tests" name="Suite">
+	<test parallel="tests" name="Test1">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="type_of_exe_parellal.ContactTest" />
+		</classes>
+
+	</test>
+	<test parallel="tests" name="Test2">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="type_of_exe_parellal.LeadTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="Test3">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="type_of_exe_parellal.OrgTest" />
+
+		</classes>
+
+	</test>
+	<test parallel="tests" name="Test4">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="type_of_exe_parellal.OpptTest" />
+
+		</classes>
+
+	</test>
+	<!-- Test -->
+</suite> 
+<!--Suite -->
+

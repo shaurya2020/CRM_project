@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 01 21:27:23 IST 2026</td>
+<td>Started on:</td><td>Thu Oct 01 21:55:23 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (41 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (43 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='type_of_exe_parellal.LeadTest.createLead()'><b>createLead</b><br>Test class: type_of_exe_parellal.LeadTest</td>
+<td title='Testing.SourceDemoEx.login()'><b>login</b><br>Test class: Testing.SourceDemoEx</td>
 <td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [createLead] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+Method public void Testing.SourceDemoEx.login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : getData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
 	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
 	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
@@ -107,14 +104,11 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1016363973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1016363973'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [createLead] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1620948027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620948027'><pre>org.testng.TestNGException: 
+Method public void Testing.SourceDemoEx.login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : getData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
 	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
 	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
@@ -140,7 +134,7 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>type_of_exe_parellal.LeadTest@28701274</td></tr>
+<td>Testing.SourceDemoEx@4afcd809</td></tr>
 </table><p>
 </body>
 </html>
