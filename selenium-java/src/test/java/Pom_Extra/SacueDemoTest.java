@@ -27,9 +27,7 @@ public class SacueDemoTest {
 		
 
 		driver.manage().window().maximize();
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
 		driver.get(url);
 		
 		SauceDemoPage sdp = new SauceDemoPage(driver);
