@@ -27,5 +27,4 @@ public class NgTest {
 	public void createopp() {
 		Reporter.log("this is pass");
 	}
-
 }
