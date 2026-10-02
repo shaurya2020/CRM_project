@@ -134,7 +134,6 @@ public class createLead {
 
 		System.out.println("[INFO] Browser window maximized.");
 
-		System.out.println("[INFO] Configuring implicit wait : 10 seconds...");
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
