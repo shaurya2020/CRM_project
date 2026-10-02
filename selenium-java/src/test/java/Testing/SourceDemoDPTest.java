@@ -26,6 +26,7 @@ public class SourceDemoDPTest {
 		driver.findElement(By.id("login-button")).click();
 		
 //		verify
+		
 		boolean status =driver.getCurrentUrl().contains("inventory");
 		Assert.assertTrue(status);
 		

@@ -27,10 +27,8 @@ public class SourceDemoEx {
 			driver = new ChromeDriver();
 		
 		System.out.println("Create contact");
-
-
-
-		driver.get("https://www.saucedemo.com/");
+		String url = "https://www.saucedemo.com/";
+		driver.get(url);
 		
 //		String user = "standard_user";
 //		String Pass = "secret_sauce";
