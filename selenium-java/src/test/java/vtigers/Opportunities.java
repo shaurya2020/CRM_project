@@ -33,7 +33,6 @@ public class Opportunities {
 		WebElement login = driver.findElement(By.id("submitButton"));
 		login.click();
 		
-		
 		WebElement module = driver.findElement(By.linkText("Opportunities"));
 		
 		module.click();
