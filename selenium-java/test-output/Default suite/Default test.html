@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 01 21:55:23 IST 2026</td>
+<td>Started on:</td><td>Fri Oct 02 13:05:18 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (43 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46213 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,65 +76,101 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Testing.SourceDemoEx.login()'><b>login</b><br>Test class: Testing.SourceDemoEx</td>
-<td><div><pre>org.testng.TestNGException: 
-Method public void Testing.SourceDemoEx.login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : getData
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1620948027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1620948027'><pre>org.testng.TestNGException: 
-Method public void Testing.SourceDemoEx.login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : getData
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Testing.SourceDemoEx@4afcd809</td></tr>
+<td title='opportunities.CreateOpprtunities.createopp()'><b>createopp</b><br>Test class: opportunities.CreateOpprtunities<br/>
+<a href="#Output-1987354705" onClick='toggleBox("Output-1987354705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1987354705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1987354705">
+============================================================<br/>
+TEST CASE STARTED : TC_OPP_001<br/>
+Test Name : Create Opportunity<br/>
+Module : Opportunities<br/>
+============================================================<br/>
+[STEP 01] Reading test configuration from JSON file...<br/>
+[INFO] Browser configuration loaded : chrome<br/>
+[INFO] Application URL loaded successfully.<br/>
+[INFO] Username loaded successfully.<br/>
+[INFO] Password loaded successfully.<br/>
+[STEP 02] Launching browser...<br/>
+[PASS] Chrome browser launched successfully.<br/>
+[STEP 03] Configuring browser settings...<br/>
+[PASS] Browser window maximized successfully.<br/>
+[PASS] Implicit wait configured : 10 seconds.<br/>
+[STEP 04] Opening Vtiger CRM application...<br/>
+[PASS] Vtiger CRM application opened successfully.<br/>
+[STEP 05] Performing application login...<br/>
+[INFO] Entering username...<br/>
+[PASS] Username entered successfully.<br/>
+[INFO] Entering password...<br/>
+[PASS] Password entered successfully.<br/>
+[INFO] Clicking Login button...<br/>
+[PASS] User logged into Vtiger CRM successfully.<br/>
+[STEP 06] Navigating to Opportunities module...<br/>
+[PASS] Opportunities module opened successfully.<br/>
+[STEP 07] Opening Create Opportunity page...<br/>
+[PASS] Create Opportunity page opened successfully.<br/>
+[STEP 08] Generating Opportunity Name...<br/>
+[INFO] Generated Opportunity Name : Zudio1790926552772<br/>
+[PASS] Opportunity Name entered successfully.<br/>
+[STEP 09] Opening Organization selection window...<br/>
+[INFO] Organization selection pop-up opened.<br/>
+[INFO] Main Opportunity window handle captured.<br/>
+[INFO] Switching to Organization selection window...<br/>
+[PASS] Organization selection window opened successfully.<br/>
+[PASS] Organization selected successfully.<br/>
+[PASS] Returned to main Opportunity window.<br/>
+[STEP 10] Entering Opportunity Amount...<br/>
+[INFO] Opportunity Amount entered : 5000<br/>
+[STEP 11] Selecting Opportunity Type...<br/>
+[PASS] Opportunity Type selected : New Business<br/>
+[STEP 12] Entering Opportunity Closing Date...<br/>
+[PASS] Closing Date entered successfully : 2026/09/18<br/>
+[STEP 13] Selecting Lead Source...<br/>
+[PASS] Lead Source selected : Partner<br/>
+[STEP 14] Selecting Assigned User...<br/>
+[PASS] Assigned User selected successfully.<br/>
+[STEP 15] Selecting Sales Stage...<br/>
+[PASS] Sales Stage selected : Perception Analysis<br/>
+[STEP 16] Opening Campaign selection window...<br/>
+[INFO] Main Opportunity window handle captured.<br/>
+[PASS] Campaign selection pop-up opened successfully.<br/>
+[INFO] Switching to Campaign selection window...<br/>
+[PASS] Campaign selection window opened successfully.<br/>
+[PASS] Returned to main Opportunity form.<br/>
+[STEP 17] Entering Opportunity Probability...<br/>
+[PASS] Probability entered : 88<br/>
+[STEP 18] Saving Opportunity...<br/>
+[PASS] Opportunity Save button clicked successfully.<br/>
+============================================================<br/>
+OPPORTUNITY VALIDATION STARTED<br/>
+============================================================<br/>
+[INFO] Fetching actual Opportunity Name...<br/>
+[INFO] Expected Opportunity Name : Zudio1790926552772<br/>
+[INFO] Actual Opportunity Name   : Zudio1790926552772<br/>
+[INFO] Fetching actual Opportunity Type...<br/>
+[INFO] Expected Opportunity Type : New Business<br/>
+[INFO] Actual Opportunity Type   : New Business<br/>
+========== OPPORTUNITY NAME VERIFICATION ==========<br/>
+[PASS] Opportunity Name verified successfully.<br/>
+========== OPPORTUNITY TYPE VERIFICATION ==========<br/>
+[PASS] Opportunity Type is matched.<br/>
+[STEP 20] Logging out from application...<br/>
+[INFO] Hovering over profile icon...<br/>
+[PASS] Profile menu opened successfully.<br/>
+[INFO] Clicking Sign Out...<br/>
+[PASS] User logged out successfully.<br/>
+[STEP 21] Closing browser...<br/>
+[PASS] Browser closed successfully.<br/>
+============================================================<br/>
+TEST CASE COMPLETED : TC_OPP_001<br/>
+Test Name : Create Opportunity<br/>
+Test Result : Opportunity creation flow completed.<br/>
+============================================================<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>opportunities.CreateOpprtunities@4afcd809</td></tr>
 </table><p>
 </body>
 </html>

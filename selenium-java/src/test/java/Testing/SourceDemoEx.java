@@ -13,6 +13,7 @@ public class SourceDemoEx {
 	@Parameters({"browser","user","pass",})
 	@Test
 	public void login(String browser,String user,String Pass) throws InterruptedException {
+		
 	
 		WebDriver driver;
 
@@ -28,7 +29,7 @@ public class SourceDemoEx {
 		System.out.println("Create contact");
 
 
-		
+
 		driver.get("https://www.saucedemo.com/");
 		
 //		String user = "standard_user";
@@ -43,8 +44,10 @@ public class SourceDemoEx {
 		boolean status =driver.getCurrentUrl().contains("inventory");
 		Assert.assertTrue(status);
 		
+		driver.findElement(By.cssSelector("[id='react-burger-menu-btn']")).click();
+//		driver.findElement(By.cssSelector("[id='logout_sidebar_link']")).click();
 		Thread.sleep(1000);
 		driver.quit();
 	
-	}
+}
 }

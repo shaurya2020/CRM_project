@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]">
   <test thread-count="5" parallel="tests" name="Test(failed)">
-    <parameter name="pass" value="admin123"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="user" value="admin"/>
+    <parameter name="pass" value="secret_sauce"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="user" value="standard_user"/>
     <classes>
       <class name="Testing.SourceDemoEx">
         <methods>
