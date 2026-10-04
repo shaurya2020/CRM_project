@@ -43,9 +43,11 @@ public class SourceDemoEx {
 		Assert.assertTrue(status);
 		
 		driver.findElement(By.cssSelector("[id='react-burger-menu-btn']")).click();
-//		driver.findElement(By.cssSelector("[id='logout_sidebar_link']")).click();
-		Thread.sleep(1000);
-		driver.quit();
+		driver.findElement(By.id("logout_sidebar_link")).click();
+//		driver.findElement(By.linkText("Logout")).click();;
+//		driver.findElement(By.cssSelector("[id='logout_sidebar_link']")).click();;
+		Thread.sleep(10000);
+//		driver.quit();
 	
 }
 }

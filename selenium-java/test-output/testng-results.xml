@@ -1,527 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[============================================================]]>
-    </line>
-    <line>
-      <![CDATA[TEST CASE STARTED : TC_OPP_001]]>
-    </line>
-    <line>
-      <![CDATA[Test Name : Create Opportunity]]>
-    </line>
-    <line>
-      <![CDATA[Module : Opportunities]]>
-    </line>
-    <line>
-      <![CDATA[============================================================]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 01] Reading test configuration from JSON file...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Browser configuration loaded : chrome]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Application URL loaded successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Username loaded successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Password loaded successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 02] Launching browser...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Chrome browser launched successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 03] Configuring browser settings...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Browser window maximized successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Implicit wait configured : 10 seconds.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 04] Opening Vtiger CRM application...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Vtiger CRM application opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 05] Performing application login...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Entering username...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Username entered successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Entering password...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Password entered successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Clicking Login button...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] User logged into Vtiger CRM successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 06] Navigating to Opportunities module...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Opportunities module opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 07] Opening Create Opportunity page...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Create Opportunity page opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 08] Generating Opportunity Name...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Generated Opportunity Name : Zudio1790926552772]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Opportunity Name entered successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 09] Opening Organization selection window...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Organization selection pop-up opened.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Main Opportunity window handle captured.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Switching to Organization selection window...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Organization selection window opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Organization selected successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Returned to main Opportunity window.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 10] Entering Opportunity Amount...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Opportunity Amount entered : 5000]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 11] Selecting Opportunity Type...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Opportunity Type selected : New Business]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 12] Entering Opportunity Closing Date...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Closing Date entered successfully : 2026/09/18]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 13] Selecting Lead Source...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Lead Source selected : Partner]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 14] Selecting Assigned User...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Assigned User selected successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 15] Selecting Sales Stage...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Sales Stage selected : Perception Analysis]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 16] Opening Campaign selection window...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Main Opportunity window handle captured.]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Campaign selection pop-up opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Switching to Campaign selection window...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Campaign selection window opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Returned to main Opportunity form.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 17] Entering Opportunity Probability...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Probability entered : 88]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 18] Saving Opportunity...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Opportunity Save button clicked successfully.]]>
-    </line>
-    <line>
-      <![CDATA[============================================================]]>
-    </line>
-    <line>
-      <![CDATA[OPPORTUNITY VALIDATION STARTED]]>
-    </line>
-    <line>
-      <![CDATA[============================================================]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Fetching actual Opportunity Name...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Expected Opportunity Name : Zudio1790926552772]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Actual Opportunity Name   : Zudio1790926552772]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Fetching actual Opportunity Type...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Expected Opportunity Type : New Business]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Actual Opportunity Type   : New Business]]>
-    </line>
-    <line>
-      <![CDATA[========== OPPORTUNITY NAME VERIFICATION ==========]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Opportunity Name verified successfully.]]>
-    </line>
-    <line>
-      <![CDATA[========== OPPORTUNITY TYPE VERIFICATION ==========]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Opportunity Type is matched.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 20] Logging out from application...]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Hovering over profile icon...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Profile menu opened successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO] Clicking Sign Out...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] User logged out successfully.]]>
-    </line>
-    <line>
-      <![CDATA[[STEP 21] Closing browser...]]>
-    </line>
-    <line>
-      <![CDATA[[PASS] Browser closed successfully.]]>
-    </line>
-    <line>
-      <![CDATA[============================================================]]>
-    </line>
-    <line>
-      <![CDATA[TEST CASE COMPLETED : TC_OPP_001]]>
-    </line>
-    <line>
-      <![CDATA[Test Name : Create Opportunity]]>
-    </line>
-    <line>
-      <![CDATA[Test Result : Opportunity creation flow completed.]]>
-    </line>
-    <line>
-      <![CDATA[============================================================]]>
-    </line>
   </reporter-output>
-  <suite started-at="2026-10-02T13:05:18 IST" name="Default suite" finished-at="2026-10-02T13:06:04 IST" duration-ms="46213">
+  <suite started-at="2026-10-04T23:59:02 IST" name="Suite" finished-at="2026-10-04T23:59:06 IST" duration-ms="3491">
     <groups>
     </groups>
-    <test started-at="2026-10-02T13:05:18 IST" name="Default test" finished-at="2026-10-02T13:06:04 IST" duration-ms="46213">
-      <class name="opportunities.CreateOpprtunities">
-        <test-method signature="createopp()[pri:0, instance:opportunities.CreateOpprtunities@4afcd809]" started-at="2026-10-02T13:05:18 IST" name="createopp" finished-at="2026-10-02T13:06:04 IST" duration-ms="46128" status="PASS">
+    <test started-at="2026-10-04T23:59:02 IST" name="Test" finished-at="2026-10-04T23:59:06 IST" duration-ms="3491">
+      <class name="Testing.SourceDemoEx">
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testing.SourceDemoEx@3e694b3f]" started-at="2026-10-04T23:59:02 IST" name="login" finished-at="2026-10-04T23:59:06 IST" duration-ms="3425" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=154.0.4258.53)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [01620cdd87c726847ceded8ffe33748c, clickElement {id=f.B9A730C649DE300970209953E1E8593D.d.A43B78329C871368DC3E5F215C0E2FEB.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.53, fedcm:accounts: true, goog:processID: 13496, ms:edgeOptions: {debuggerAddress: localhost:52583}, msedge: {msedgedriverVersion: 153.0.4234.48 (cf31d6623d87..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52583/devtoo..., se:cdpVersion: 154.0.4258.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (01620cdd87c726847ceded8ffe33748c)] -> id: logout_sidebar_link]
+Session ID: 01620cdd87c726847ceded8ffe33748c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=154.0.4258.53)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [01620cdd87c726847ceded8ffe33748c, clickElement {id=f.B9A730C649DE300970209953E1E8593D.d.A43B78329C871368DC3E5F215C0E2FEB.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.53, fedcm:accounts: true, goog:processID: 13496, ms:edgeOptions: {debuggerAddress: localhost:52583}, msedge: {msedgedriverVersion: 153.0.4234.48 (cf31d6623d87..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52583/devtoo..., se:cdpVersion: 154.0.4258.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (01620cdd87c726847ceded8ffe33748c)] -> id: logout_sidebar_link]
+Session ID: 01620cdd87c726847ceded8ffe33748c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Testing.SourceDemoEx.login(SourceDemoEx.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
-            <line>
-              <![CDATA[============================================================]]>
-            </line>
-            <line>
-              <![CDATA[TEST CASE STARTED : TC_OPP_001]]>
-            </line>
-            <line>
-              <![CDATA[Test Name : Create Opportunity]]>
-            </line>
-            <line>
-              <![CDATA[Module : Opportunities]]>
-            </line>
-            <line>
-              <![CDATA[============================================================]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 01] Reading test configuration from JSON file...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Browser configuration loaded : chrome]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Application URL loaded successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Username loaded successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Password loaded successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 02] Launching browser...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Chrome browser launched successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 03] Configuring browser settings...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Browser window maximized successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Implicit wait configured : 10 seconds.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 04] Opening Vtiger CRM application...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Vtiger CRM application opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 05] Performing application login...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Entering username...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Username entered successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Entering password...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Password entered successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Clicking Login button...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] User logged into Vtiger CRM successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 06] Navigating to Opportunities module...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Opportunities module opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 07] Opening Create Opportunity page...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Create Opportunity page opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 08] Generating Opportunity Name...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Generated Opportunity Name : Zudio1790926552772]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Opportunity Name entered successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 09] Opening Organization selection window...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Organization selection pop-up opened.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Main Opportunity window handle captured.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Switching to Organization selection window...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Organization selection window opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Organization selected successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Returned to main Opportunity window.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 10] Entering Opportunity Amount...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Opportunity Amount entered : 5000]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 11] Selecting Opportunity Type...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Opportunity Type selected : New Business]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 12] Entering Opportunity Closing Date...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Closing Date entered successfully : 2026/09/18]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 13] Selecting Lead Source...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Lead Source selected : Partner]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 14] Selecting Assigned User...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Assigned User selected successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 15] Selecting Sales Stage...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Sales Stage selected : Perception Analysis]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 16] Opening Campaign selection window...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Main Opportunity window handle captured.]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Campaign selection pop-up opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Switching to Campaign selection window...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Campaign selection window opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Returned to main Opportunity form.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 17] Entering Opportunity Probability...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Probability entered : 88]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 18] Saving Opportunity...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Opportunity Save button clicked successfully.]]>
-            </line>
-            <line>
-              <![CDATA[============================================================]]>
-            </line>
-            <line>
-              <![CDATA[OPPORTUNITY VALIDATION STARTED]]>
-            </line>
-            <line>
-              <![CDATA[============================================================]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Fetching actual Opportunity Name...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Expected Opportunity Name : Zudio1790926552772]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Actual Opportunity Name   : Zudio1790926552772]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Fetching actual Opportunity Type...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Expected Opportunity Type : New Business]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Actual Opportunity Type   : New Business]]>
-            </line>
-            <line>
-              <![CDATA[========== OPPORTUNITY NAME VERIFICATION ==========]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Opportunity Name verified successfully.]]>
-            </line>
-            <line>
-              <![CDATA[========== OPPORTUNITY TYPE VERIFICATION ==========]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Opportunity Type is matched.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 20] Logging out from application...]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Hovering over profile icon...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Profile menu opened successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[INFO] Clicking Sign Out...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] User logged out successfully.]]>
-            </line>
-            <line>
-              <![CDATA[[STEP 21] Closing browser...]]>
-            </line>
-            <line>
-              <![CDATA[[PASS] Browser closed successfully.]]>
-            </line>
-            <line>
-              <![CDATA[============================================================]]>
-            </line>
-            <line>
-              <![CDATA[TEST CASE COMPLETED : TC_OPP_001]]>
-            </line>
-            <line>
-              <![CDATA[Test Name : Create Opportunity]]>
-            </line>
-            <line>
-              <![CDATA[Test Result : Opportunity creation flow completed.]]>
-            </line>
-            <line>
-              <![CDATA[============================================================]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- createopp -->
-      </class> <!-- opportunities.CreateOpprtunities -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+      </class> <!-- Testing.SourceDemoEx -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
