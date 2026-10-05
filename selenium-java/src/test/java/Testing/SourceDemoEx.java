@@ -29,6 +29,8 @@ public class SourceDemoEx {
 			driver = new FirefoxDriver();
 		} else
 			driver = new ChromeDriver();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 //		WebDriver driver = new EdgeDriver();
 
@@ -50,10 +52,12 @@ public class SourceDemoEx {
 		Assert.assertTrue(status);
 
 		driver.findElement(By.cssSelector("[id='react-burger-menu-btn']")).click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		WebElement logoutLink = wait.until(ExpectedConditions.elementToBeClickable(By.id("logout_sidebar_link")));
-		logoutLink.click();
-		Thread.sleep(5000);
+		driver.findElement(By.id("logout_sidebar_link")).click();
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//		wait.until(ExpectedConditions.elementToBeClickable(By.id("logout_sidebar_link"))).click();
+		Thread.sleep(2000);
+
+		System.out.println("Create contact page is LogOut");
 
 		driver.quit();
 	}
