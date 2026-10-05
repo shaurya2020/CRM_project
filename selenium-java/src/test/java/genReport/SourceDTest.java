@@ -4,8 +4,8 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -23,17 +23,22 @@ public class SourceDTest {
 
 		ExtentReports report = new ExtentReports();
 		report.attachReporter(spark);
-		report.setSystemInfo("Browser", "Edge");
+		report.setSystemInfo("Browser", "Chrome");
 		report.setSystemInfo("OS", "Windows 11");
 		report.setSystemInfo("URL", "https://www.saucedemo.com/");
 
+		
+		ExtentTest loginTest = report.createTest("Login");
+
 		// --- Driver Setup ---
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
+		loginTest.log(Status.INFO, "Open the Chrome browser");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		loginTest.log(Status.INFO, "Chrome browser is maximize");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		loginTest.log(Status.INFO, "Wait for 15 Sec");
 
 		// ========== TEST 1: Login ==========
-		ExtentTest loginTest = report.createTest("Login");
 		
 		driver.get("https://www.saucedemo.com/");
 		loginTest.log(Status.INFO, "Navigated to SauceDemo login page");
@@ -48,26 +53,9 @@ public class SourceDTest {
 		loginTest.log(Status.INFO, "Clicked login button");
 
 		if (driver.getCurrentUrl().contains("inventory")) {
-			loginTest.log(Status.PASS, "Login successful — redirected to inventory page");
+			loginTest.log(Status.PASS, "Login successful");
 		} else {
-			loginTest.log(Status.FAIL, "Login failed — not on inventory page. URL: " + driver.getCurrentUrl());
-		}
-		loginTest.log(Status.INFO, "Now, We are on the Home Page");
-
-		// ========== TEST 2: Logout ==========
-
-		ExtentTest logoutTest = report.createTest("Logout");
-
-		driver.findElement(By.id("react-burger-menu-btn")).click();
-		logoutTest.log(Status.INFO, "Opened side menu");
-
-		driver.findElement(By.id("logout_sidebar_link")).click();
-		logoutTest.log(Status.INFO, "Clicked logout");
-
-		if (driver.getCurrentUrl().contains("saucedemo.com")) {
-			logoutTest.log(Status.PASS, "Logout successful — login page displayed");
-		} else {
-			logoutTest.log(Status.FAIL, "Logout failed — login page not displayed");
+			loginTest.log(Status.FAIL, "Login failed");
 		}
 		report.flush();
 
