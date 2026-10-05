@@ -26,7 +26,6 @@ public class SourceDTest {
 		report.setSystemInfo("Browser", "Chrome");
 		report.setSystemInfo("OS", "Windows 11");
 		report.setSystemInfo("URL", "https://www.saucedemo.com/");
-
 		
 		ExtentTest loginTest = report.createTest("Login");
 
