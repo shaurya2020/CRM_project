@@ -15,6 +15,7 @@ public class SourceDTest {
 	public static void main(String[] args) {
 
 		// --- Report Setup ---
+		
 		ExtentSparkReporter spark = new ExtentSparkReporter("./ad_report/rep.html");
 		spark.config().setDocumentTitle("Sauce Demo Report");
 		spark.config().setReportName("SauceDemo Test Suite");
@@ -29,6 +30,7 @@ public class SourceDTest {
 		ExtentTest loginTest = report.createTest("Login");
 
 		// --- Driver Setup ---
+		
 		WebDriver driver = new ChromeDriver();
 		loginTest.log(Status.INFO, "Open the Chrome browser");
 		driver.manage().window().maximize();
