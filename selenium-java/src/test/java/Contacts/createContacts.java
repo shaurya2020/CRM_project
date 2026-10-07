@@ -59,9 +59,7 @@ public class createContacts {
 //	public static void main(String[] args)throws InterruptedException, EncryptedDocumentException, IOException, ParseException {
 
 	public void cratecontact() throws IOException, ParseException, InterruptedException {
-		// ============================================================
 		// TEST CASE START
-		// ============================================================
 
 		System.out.println("==================================================");
 		System.out.println("          TEST CASE STARTED : TC_CON_001");
@@ -100,24 +98,17 @@ public class createContacts {
 		System.out.println("[INFO] Email test data loaded.");
 		System.out.println("[INFO] Assistant test data loaded.");
 
-
-
-		// ============================================================
 		// BROWSER SETUP
-		// ============================================================
 
 		System.out.println("[STEP 03] Launching Chrome browser...");
 
 		WebDriver driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
-
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 		System.out.println("[INFO] Chrome browser launched successfully.");
 		System.out.println("[INFO] Browser window maximized.");
 		System.out.println("[INFO] Implicit wait configured : 15 seconds.");
-
 
 //		OPEN APPLICATION
 
@@ -440,23 +431,15 @@ public class createContacts {
 			System.out.println("FAIL : Lead Source is not matched");
 		}
 
-
-
-		// ============================================================
 		// ASSISTANT VERIFICATION
-		// ============================================================
 
 		System.out.println("\n========== ASSISTANT VERIFICATION ==========");
-
 		System.out.println("Expected Result : " + asi);
 		System.out.println("Actual Result   : " + VAssis);
 
 		if (asi.equals(VAssis)) {
-
 			System.out.println("PASS : Assistant is matched");
-
 		} else {
-
 			System.out.println("FAIL : Assistant is not matched");
 		}
 
@@ -493,28 +476,13 @@ public class createContacts {
 		WebElement profile = sn.getPro();
 
 		WebDriverUtility wdUtil = new WebDriverUtility(driver);
-
-		/*
-		 * Move mouse pointer to Profile/User icon.
-		 */
 		wdUtil.hover(profile);
-
 		System.out.println("[INFO] Profile menu opened.");
-
-		/*
-		 * Click Sign Out.
-		 */
 		WebElement Out = sn.getSingnOut();
-
 		Out.click();
-
 		System.out.println("[PASS] User logged out successfully.");
 
-
-
-		// ============================================================
 		// CLOSE BROWSER
-		// ============================================================
 
 		Thread.sleep(1000);
 
