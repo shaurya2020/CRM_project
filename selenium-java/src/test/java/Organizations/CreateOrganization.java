@@ -197,7 +197,6 @@ public class CreateOrganization {
 		Reporter.log("[INFO] Clicking Login button...", true);
 
 		WebElement button = Lg.getbutton();
-
 		button.click();
 
 		Reporter.log("[PASS] User logged into Vtiger CRM successfully.", true);
